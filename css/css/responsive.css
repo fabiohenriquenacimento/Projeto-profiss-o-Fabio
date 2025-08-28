@@ -1,0 +1,152 @@
+/* Media Queries para Responsividade */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .sobre-content,
+    .contato-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .servico-item {
+        grid-template-columns: 1fr;
+    }
+    
+    .servico-img {
+        height: 300px;
+    }
+}
+
+/* Tablets Pequenos */
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 80%;
+        height: calc(100vh - 70px);
+        background-color: var(--cor-branco);
+        flex-direction: column;
+        transition: var(--transicao);
+        box-shadow: var(--sombra);
+        z-index: 999;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-menu ul {
+        flex-direction: column;
+        padding: 30px;
+    }
+    
+    .nav-menu ul li {
+        margin: 15px 0;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .hero {
+        padding: 120px 0 80px;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .destaques-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .experiencia {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .exp-item {
+        padding: 20px;
+        background-color: var(--cor-fundo);
+        border-radius: 10px;
+    }
+    
+    .projetos-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .processo-steps {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Celulares */
+@media (max-width: 576px) {
+    .container {
+        width: 95%;
+    }
+    
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+    
+    .hero {
+        padding: 100px 0 60px;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .page-header {
+        padding: 100px 0 50px;
+    }
+    
+    .page-header h2 {
+        font-size: 2rem;
+    }
+    
+    .sobre,
+    .servicos,
+    .projetos,
+    .contato {
+        padding: 60px 0;
+    }
+    
+    .filtros {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filtro-btn {
+        width: 200px;
+        margin: 5px 0;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+}
